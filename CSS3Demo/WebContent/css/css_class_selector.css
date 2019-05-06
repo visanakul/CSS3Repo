@@ -1,0 +1,49 @@
+.main_body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.header, .footer {
+	width: 100%;
+	background-color: black;
+	position: fixed;
+	left: 0;
+}
+
+.header {
+	text-transform: uppercase;
+	top: 0;
+	padding: 10px 0;
+	top: 0;
+}
+
+.footer {
+	bottom: 0;
+	color: white;
+	padding: 10px;
+}
+
+.menu {
+	width: 80%;
+	margin: auto;
+}
+
+.content {
+	width: 80%;
+	margin: auto;
+}
+
+p.para {
+	padding: 10px; text-align : justify;
+	color: lime;
+	background-color: gray;
+	text-align: justify;
+}
+
+.link {
+	padding: 10px 20px;
+	color: white;
+	text-decoration: none;
+}

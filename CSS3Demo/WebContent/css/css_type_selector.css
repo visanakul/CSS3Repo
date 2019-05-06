@@ -1,0 +1,26 @@
+h1,h3,ul{
+	background-color: gray;
+	color: white;
+}
+
+h1 {
+	padding: 10px 5px;
+	text-align: center;
+}
+
+div {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+h3 {
+	padding: 10px 5px;
+}
+
+ul {
+	padding:10px;
+}
+
+li {
+	text-decoration: underline;
+}
