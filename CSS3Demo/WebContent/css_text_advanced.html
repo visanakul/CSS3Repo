@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+.clip {
+	white-space: nowrap;
+	width: 100px;
+	overflow: hidden;
+	text-overflow: clip;
+	width: 100px;
+	background-color: aqua;
+}
+
+.ellipsis {
+	white-space: nowrap;
+	width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100px;
+	background-color: aqua;
+	width: 100px;
+}
+
+p:hover {
+	overflow: visible;
+}
+
+.word_break {
+	width: 100px;
+	word-wrap: break-word;
+}
+
+.keep_all {
+	width: 100px;
+	word-break: keep-all;
+}
+
+.break_all {
+	width: 100px;
+	word-break: break-all;
+}
+
+.writing_hr {
+	writing-mode: horizontal-tb;
+}
+
+.writing_vr {
+	writing-mode: vertical-rl;
+}
+</style>
+</head>
+<body>
+	<p class="clip">This is First Line. This is second line.</p>
+	<p class="ellipsis">This is First Line. This is second line.</p>
+	<p class="word_break">This is First Line. Thisissecondline.</p>
+	<p class="keep_all">This paragraph actually contains some text.
+		This line will-break-at-hyphens.</p>
+	<p class="break_all">This paragraph actually contains some text.
+		The lines will break at any character.</p>
+	<p class="writing_hr">This is First Line. This is second line.</p>
+	<p class="writing_vr">This is First Line. This is second line.</p>
+	<p >This is First Line. This is <span class="writing_vr">second</span> line.</p>
+</body>
+</html>
