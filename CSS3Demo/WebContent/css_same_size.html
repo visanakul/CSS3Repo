@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+.clearfix {
+	background-color: gray;
+	clear: both;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.float_left {
+	float: left;
+	width: 33.33%;
+	height: inherit;
+	padding: 20px;
+	text-align: justify;
+	padding: 20px;
+}
+
+.dis-table {
+ display: table;
+  width: 100%;
+}
+
+.dis-cell {
+	display: table-cell;
+  padding: 16px;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<h1 style="background: aqua;">First Combination</h1>
+	<p style="float: left;">Apply it to any parent element in which you
+		need to clear the floats. ....pseudo-selectors don't work in IE6</p>
+	<div class="clearfix">
+		<div class="float_left" style="background-color: red;">
+			<p>Apply it to any parent element in which you need to clear the
+				floats. .... I am pretty sure that :before and :after
+				pseudo-selectors don't work in IE6</p>
+		</div>
+		<div class="float_left" style="background-color: green;"></div>
+		<div class="float_left" style="background-color: blue;"></div>
+		<div class="float_left" style="background-color: green;"></div>
+		<div class="float_left" style="background-color: blue;"></div>
+	</div>
+	<h1>Another combination</h1>
+
+	<div id="dis-table">
+		<div class="dis-cell">
+		dasdad dsad
+		dasdadadsad
+		sadsad
+		adsad
+		sad
+		sad
+		sad
+		asd</div>
+		<div class="dis-cell">asd ad
+		adasd </div>
+		<div class="dis-cell">asda assda ad</div>
+
+
+	</div>
+
+</body>
+</html>
