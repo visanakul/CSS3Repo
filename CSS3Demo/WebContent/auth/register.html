@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/css_auth.css">
+
+</head>
+<body>
+	<div class="sign-up">
+		<form>
+			<h2>Sign Up</h2>
+				<input type="text" name="first_name" placeholder="First name" required
+					oninvalid="this.setCustomValidity('Enter first name')"
+					oninput="this.setCustomValidity('')" /> 
+				<input type="text" name="last_name" placeholder="Last name" required
+					oninvalid="this.setCustomValidity('Enter last name')"
+					oninput="this.setCustomValidity('')" /> 
+				<input type="password"
+					name="pass" placeholder="Password" required
+					oninvalid="this.setCustomValidity('Enter password')"
+					oninput="this.setCustomValidity('')" /> 
+				<input type="password"
+					name="conf_pass" placeholder="Confirm Password" required
+					oninvalid="this.setCustomValidity('Enter confirm password')"
+					oninput="this.setCustomValidity('')" /> 
+				<input type="email" name="email" placeholder="abc@pqr.com" required
+					oninvalid="this.setCustomValidity('Enter email id')"
+					oninput="this.setCustomValidity('')" /> 
+				<input type="submit" value="Sign Up" /> 
+		</form>
+	</div>
+</body>
+</html>

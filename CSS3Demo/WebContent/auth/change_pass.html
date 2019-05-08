@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/css_auth.css">
+</head>
+<body>
+<div class="change">
+		<form>
+			<h2>Change Password</h2>
+				<input type="password"
+					name="old_pass" placeholder="Old Password" required
+					oninvalid="this.setCustomValidity('Enter old password')"
+					oninput="this.setCustomValidity('')" /> 
+				<input type="password"
+					name="new_pass" placeholder="New Password" required
+					oninvalid="this.setCustomValidity('Enter new password')"
+					oninput="this.setCustomValidity('')" /> 
+				<input type="password"
+					name="conf_pass" placeholder="Confirm Password" required
+					oninvalid="this.setCustomValidity('Enter confirm password')"
+					oninput="this.setCustomValidity('')" /> 
+		
+				<input type="submit" value="Change" /> 
+		</form>
+	</div>
+</body>
+</html>

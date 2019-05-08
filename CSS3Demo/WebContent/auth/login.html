@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/css_auth.css">
+</head>
+<body>
+	<div class="sign-in">
+		<h2>Sign In</h2>
+		<form>
+			<input type="text" name="user_name" placeholder="Username" required
+				oninvalid="this.setCustomValidity('Enter user name')"
+				oninput="this.setCustomValidity('')" /> <input type="password"
+				name="pass" placeholder="Password" required
+				oninvalid="this.setCustomValidity('Enter password')"
+				oninput="this.setCustomValidity('')" /> <input type="submit"
+				value="Sign In" />
+			<div class="row">
+				<a class="col" href="register.html">Sign Up</a> <a class="col"
+					href="forgot_pass.html">Forgot Password</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
